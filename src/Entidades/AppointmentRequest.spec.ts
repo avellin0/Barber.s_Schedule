@@ -36,3 +36,23 @@ test(" Shouldn't be able create an appointment with End less than start ", () =>
     }).toThrow()
 })
 
+
+test('should get the difference between the start and End', () => {
+    const start = new Date()
+    const end = new Date()
+
+    start.setDate(start.getDate() + 1)
+    end.setDate(end.getDate() + 3)
+
+    const app = new Appointment({
+        client: "fulano",
+        start,
+        end,
+    })
+
+
+    
+
+
+})
+

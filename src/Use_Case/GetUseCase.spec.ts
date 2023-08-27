@@ -1,5 +1,5 @@
 import { expect, test } from "vitest"
-import { CreateAppointment } from "./GetUseCase"
+import { CreateAppointmentRepository } from "./GetUseCase"
 import { InMemoryRepository } from "../Repository/in-memory/in-memory-repository";
 
 test('Create an Appointment', () => {
@@ -11,7 +11,7 @@ test('Create an Appointment', () => {
     end.setDate(end.getDate() + 2)
 
     const AppointmentRepository = new InMemoryRepository()
-    const app = new CreateAppointment(AppointmentRepository);
+    const app = new CreateAppointmentRepository(AppointmentRepository);
 
     expect(app.execute({
         client: "john Doe",

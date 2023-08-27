@@ -10,8 +10,8 @@ interface AppointmentsRequest {
 type AppointmentsResponse = Appointment
 
 
-export class CreateAppointment {
-    constructor(private AppointmentRepositories: AppointmentRepository) { }
+export class CreateAppointmentRepository {
+    constructor(private AppointmentRepositories: AppointmentRepository){ }
 
 
     async execute({ client, start, end }: AppointmentsRequest): Promise<AppointmentsResponse> {
