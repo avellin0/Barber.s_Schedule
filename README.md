@@ -1,1 +1,1 @@
-This is a simple Barber's Schedule to improve the experienc from client 
+This is a simple Barber's Schedule to improve the experienc from client.
